@@ -1,3 +1,7 @@
+$btn-green : #AADB1E;
+$font-grey : #808080;
+$table-bg-color : rgba(0,0,0,.03);
+
 .table-section{
     padding: .75rem;
     picture{
@@ -6,7 +10,7 @@
         }
     }
     h2{
-        color: #808080;
+        color: $font-grey;
     }
     input{
         width: 30%;
@@ -23,7 +27,7 @@ table{
     border-collapse: collapse;
 
     .green{
-        color:#AADB1E ;
+        color:$btn-green ;
         font-family: monospace;
         text-align: right;
         font-size: 15px;
@@ -41,15 +45,15 @@ table{
         padding: 8px;
       }
       tr{
-          color: #808080;
+          color: $font-grey;
       &:nth-child(even) {
-          background-color: rgba(0,0,0,.03);
-          border: 1px solid rgba(0,0,0,.03) ;
+          background-color: $table-bg-color;
+          border: 1px solid $table-bg-color ;
           border-radius: 2px;
-          color: #808080 ;
+          color: $font-grey ;
           
         }
-        &:hover {background-color:rgba(0,0,0,.03);}
+        &:hover {background-color:$table-bg-color;}
     }
 
 }
@@ -59,21 +63,21 @@ table{
     justify-content: space-between;
     align-items: center;
     h4{
-        color: #808080;
+        color: $font-grey;
         padding-right: 40px;
     }
 }
 button{
     padding: 0.35rem;
-    color: #AADB1E;
+    color: $btn-green;
     background: #fff;
     border: 2px solid;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
-    outline: #AADB1E;
+    outline: $btn-green;
     &:hover{
-        background-color: #AADB1E;
+        background-color: $btn-green;
         color: #ffffff;
         border-color: #78AA00;
     }
@@ -87,20 +91,20 @@ button{
         display: block;
         float: left;
         font-size: 12px;
-        color: #808080;
+        color: $font-grey;
     }
     button{
         padding: 0.35rem;
-        color: #AADB1E;
+        color: $btn-green;
         background: #fff;
         border: 2px solid;
         border-radius: 5px;
         cursor: pointer;
         font-size: 14px;
         margin-top: 10px;
-        outline: #AADB1E;
+        outline: $btn-green;
         &:hover{
-            background-color: #AADB1E;
+            background-color: $btn-green;
             color: #ffffff;
             border-color: #78AA00;
         }

@@ -31,10 +31,7 @@ function EmployeeTable() {
         salary: '68000.34322',
     }])
     
-
-
-
-    const addEmployee = (event) => {
+    const addEmployee = event => {
         event.preventDefault()
         const newEmployee = [...employees, {
             name: employeeName,
@@ -47,22 +44,8 @@ function EmployeeTable() {
         setEmployeeLastName('');
         setCompany('');
         setSalary('');
-
-        /*if (!tarea.trim()) {
-            console.log("elemento vacio")
-            setError('Campo requerido')
-            return
-            
-          }
-          console.log(tarea)
-          setTask([...task,{
-            id:shortid.generate(),
-            tarea:tarea
-          }])   
-          setTarea('')
-          setError(null)*/
     }
-    const editEmployee = (event) => {
+    const editEmployee = event => {
         event.preventDefault()
         const editEmployee = employees.map((employee, i) =>
             i === employeeId ?
@@ -95,18 +78,15 @@ function EmployeeTable() {
         console.log("well hello")
     }
 
-    const searchBy = (event) => {
+    const searchBy = event => {
         setSearchItem(event.target.value)
-        const filteredEmployees = employees.filter(employee =>
-            employee.name.toLowerCase().includes(searchItem.toLowerCase()) ||
-            employee.company.toLowerCase().includes(searchItem.toLowerCase())
-        )
-        setSearchResults(filteredEmployees)
-        console.log(searchResults)
+      
     }
-
-
-
+    const filteredEmployees = employees.filter(employee =>
+        employee.name.toLowerCase().includes(searchItem.toLowerCase()) ||
+        employee.company.toLowerCase().includes(searchItem.toLowerCase())
+    )
+    
     const changeCurrencytoUSD = () => {
         if (!changeCurrency) {
             setChangeCurrency(true)
@@ -148,8 +128,8 @@ function EmployeeTable() {
                     </thead>
                     <tbody>
                         {
-                            searchResults.length !== 0 ?
-                            searchResults.map((employee, i) =>
+                            filteredEmployees.length !== 0 ?
+                            filteredEmployees.map((employee, i) =>
                                     (<tr key={i}>
                                         <th>{employee.company}</th>
                                         <td>{employee.name}</td>

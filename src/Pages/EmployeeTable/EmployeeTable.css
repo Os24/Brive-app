@@ -1,0 +1,130 @@
+.table-section {
+  padding: .75rem;
+}
+
+.table-section picture img {
+  height: 34px;
+}
+
+.table-section h2 {
+  color: #808080;
+}
+
+.table-section input {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .35rem;
+  border-radius: 6px;
+  border: 1px solid;
+  outline: none;
+  margin-bottom: .5rem;
+}
+
+.table-section table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.table-section table .green {
+  color: #AADB1E;
+  font-family: monospace;
+  text-align: right;
+  font-size: 15px;
+}
+
+.table-section table .red {
+  color: red;
+  font-family: monospace;
+  text-align: right;
+  font-size: 15px;
+}
+
+.table-section table th, .table-section table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table-section table tr {
+  color: #808080;
+}
+
+.table-section table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 2px;
+  color: #808080;
+}
+
+.table-section table tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.table-section .currency-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-section .currency-container h4 {
+  color: #808080;
+  padding-right: 40px;
+}
+
+.table-section button {
+  padding: 0.35rem;
+  color: #AADB1E;
+  background: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: #AADB1E;
+}
+
+.table-section button:hover {
+  background-color: #AADB1E;
+  color: #ffffff;
+  border-color: #78AA00;
+}
+
+.form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .75rem;
+}
+
+.form-section label {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #808080;
+}
+
+.form-section button {
+  padding: 0.35rem;
+  color: #AADB1E;
+  background: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  outline: #AADB1E;
+}
+
+.form-section button:hover {
+  background-color: #AADB1E;
+  color: #ffffff;
+  border-color: #78AA00;
+}
+/*# sourceMappingURL=EmployeeTable.css.map */
